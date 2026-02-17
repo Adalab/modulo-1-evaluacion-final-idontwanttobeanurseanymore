@@ -1,0 +1,30 @@
+/*
+si uso SK:
+carpeta scss dentro de src -> aquí está el main.scss y la carpeta de partials
+en main ponemos los enlaces a los partials
+Partials que me interesan:
+- reset inicial
+- colores (variables)
+- @media queries
+
+después añado mis estilos en el main 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+    _reset.scss
+    */
+}
+:root{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+body{
+    background-color: wheat;
+}
+.page-1{
+    background-image: url(./images/hero-cover.webp)
+}
