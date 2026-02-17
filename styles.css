@@ -26,5 +26,13 @@ body{
     background-color: wheat;
 }
 .page-1{
-    background-image: url(./images/hero-cover.webp)
+    background-image: url(./images/hero-cover.webp);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    color: green;
+    width: 100px;
+    height: 100px;
 }
