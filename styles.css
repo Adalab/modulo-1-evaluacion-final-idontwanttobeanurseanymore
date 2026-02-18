@@ -21,18 +21,129 @@ después añado mis estilos en el main
 :root{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 24px;
+    --verde:#6C933E ;
 }
 body{
-    background-color: wheat;
-}
-.page-1{
-    background-image: url(./images/hero-cover.webp);
-    display:flex;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+}
+main{
+    background-color: aquamarine;
+    width: 100%;
+}
+/*
+div, section, footer, main {
+  border: 1px solid red;
+}*/
+header{
+    padding:0;
+    margin: 0;
+    width: 7dvh;
+    position: fixed;
+}
+
+.header img{
+    width:100%;
+    padding: 2dvh;
+    margin:0;
+    background-color: var(--verde);
+}
+
+.page-1{
+    background-image: url("./images/hero-cover.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    height: 100dvh;
+    /*vh puede fallar*/
+
+}
+.main-page-1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+}
+.text-page-1{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items:center;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+    justify-content: flex-end;
+    font-size: 3dvh;
+    gap: 1.2rem;
+    width: 80%;
+    height: 80dvh;
+    
+}
+.text-page-1 h1{
+    font-size: 6dvh;
+    font-weight: 600;
+}
+.text-page-1 h2{
+    font-size: 3dvh;
+    font-weight: 300;
+}
+.arow-page-1{
+    background-color: white;
+    padding:3dvh;
+    margin: 0;
+    width: 7dvh;
+    height: 7dvh;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+.arrow-page-1 img{
+    width: 100%;
+    margin:0;
+    padding:0;
+    /*COLOR VERDE????*/
+}
+
+/*
+.page-1{
+    width:100%;
+   margin-top:100px;
+}
+
+.main-page-1{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+
+.page-1{
+    background-image: url("./images/hero-cover.webp");
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
 }
 .menu{
-    color: green;
-    width: 100px;
-    height: 100px;
+    position:fixed;
+    top:0;
+    left: 0;
+    background-color: green;
+    padding: 5px;
+    margin:1rem;
+    width:100%;
 }
+.menu img{
+    padding: 1rem;
+}
+    */
+/*.main-page-1{
+    display:flex;
+}
+    */
