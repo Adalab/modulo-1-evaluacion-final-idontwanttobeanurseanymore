@@ -24,6 +24,7 @@ después añado mis estilos en el main
     --verde:#6C933E ;
     --verde-claro:#D9E4CC;
     --gris: #636363;
+    --gris-oscuro: #4A4A4A;
 }
 body{
     margin: 0;
@@ -190,9 +191,34 @@ PAGE-3
 .page-3 .arrow img{
     margin-top: 1dvh
 }
-
-
-
+/* FOOTER */
+footer{
+    background-color: var(--gris-oscuro);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2dvh;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2dvh;
+    padding: 2dvh;
+    color: white;
+    text-decoration: none;
+}
+.footer-logos{
+    font-size: 2dvh;
+    font-weight: 300;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 3dvh;
+    font-weight: 200;
+}
 
 /* MEDIA QUERIES*/
    /* TABLET */
@@ -205,6 +231,15 @@ PAGE-3
     }
     .btn{
         width: 40%;
+    }
+    footer{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        padding: 4dvh;
+    }
+    .footer-logos .footer-socials{
+        flex-direction: row-reverse;
+        gap: 4dvh;
     }
 }
 
@@ -226,11 +261,21 @@ PAGE-3
     }
 }
     
+/*PSEUDO-SELECTORS*/
+.copyright::before {
+  content: "\00A9"; /* Símbolo de copyright */
+  margin-right: 1dvh;
+}
+/*
+.btn:hover{
 
+}
+*/
 
 
 /*
 DUDAS:
 - Flechas: como cambio el color????
 - Botones crecen con el tamaño, pero con rem quedan raros :(
+- footer: como le doy la vuelta a solo 1 div???
 */
