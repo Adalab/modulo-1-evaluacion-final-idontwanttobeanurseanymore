@@ -22,6 +22,8 @@ después añado mis estilos en el main
     font-family:Arial, Helvetica, sans-serif;
     font-size: 24px;
     --verde:#6C933E ;
+    --verde-claro:#D9E4CC;
+    --gris: #636363;
 }
 body{
     margin: 0;
@@ -59,7 +61,6 @@ header{
     background-repeat: no-repeat;
     background-position: 90% center;
     height: 100dvh;
-    /*vh puede fallar*/
 
 }
 .main-page-1{
@@ -83,11 +84,11 @@ header{
     height: 80dvh;
     
 }
-.text-page-1 h1{
+.text-page-1-h1{
     font-size: 6dvh;
     font-weight: 600;
 }
-.text-page-1 h2{
+.text-page-1-h2{
     font-size: 3dvh;
     font-weight: 300;
 }
@@ -110,8 +111,8 @@ header{
 }
 
 /*
-    PAGE-2
-    */
+PAGE-2
+*/
 .page-2{
     display: flex;
     flex-wrap: wrap;
@@ -121,13 +122,13 @@ header{
     font-size: 3dvh;
     background-color: white;
 }
-.page-2 h3{
+.page-2-h3{
     font-size: 2.5dvh;
     font-weight: 400;
     color: var(--verde);
     margin: 1dvh 0;
 }
-.page-2 h2{
+.page-2-h2{
     font-size: 4dvh;
     font-weight: 600;
     margin: 1dvh 0;
@@ -135,7 +136,7 @@ header{
 .page-2-p{
     margin-bottom: 7dvh;
 }
-button{
+.btn{
     color: var(--verde);
     background-color: white;
     border-style: solid;
@@ -145,15 +146,56 @@ button{
     font-size: 3dvh;
     border-radius: 4.5dvh;
     width: 60%;
-    /*tamaño botón: 
-    164.824x23.187
-    tamaño contenedor: 327x244pixeles
-    */
 }
-.btn{
+.btn-text{
     margin-bottom: 0;
+    font-size: 4dvh;
     font-weight: 500;
 }
+
+/*
+PAGE-3
+*/
+.page-3{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: var(--verde-claro);
+}
+.page-3-text{
+    width: 70%;
+}
+.page-3-p{
+    color: var(--gris);
+    font-size: 2.2dvh;
+    font-weight: 700;
+}
+.page-3-h1{
+    font-size: 4dvh;
+    font-weight: 700;
+}
+.page-3 div{
+    display:grid;
+    place-items:center;
+    text-align: center;
+    margin-top: 4dvh;
+}
+.product img{
+    border-radius: 50%;
+    width:70%;
+}
+.product-name{
+    font-size: 3dvh;
+    font-weight: 700;
+}
+.page-3 .btn{
+    background-color: var(--verde);
+    color: white;
+    margin-top: 2dvh;
+}
+
+
+
 
 /* MEDIA QUERIES*/
    /* TABLET */

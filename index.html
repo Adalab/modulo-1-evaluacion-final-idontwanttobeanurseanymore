@@ -9,56 +9,57 @@
 </head>
 <body>
     <main>
-        <!--Dividimos en secciones-->
-     <section class="page-1"> 
+     <section id="page-1" class="page-1"> 
         <header class="header">
                 <a href="https://adalab.es"><img src="./images/icon-menu-hamb.svg"></a>
         </header>
        
             <!--
-            menú hamburgesa + foto fondo + h1 + h2 + flecha
-            FLEXBOT!!
-            ocupa el ancho del navegador (¡ojo ordenador/móvil!)
             menú no desaparece + enlace a adalab
             flecha enlaza a "vuelta al cole"
             -->
-    
             <div class="main-page-1">
             <div class="text-page-1">
-                <h1>COMIENZOS COMPARTIDOS</h1>
-                <h2>Todo lo que necesitan para volver al cole con ilusión</h2>
+                <h1 class="text-page-1-h1">COMIENZOS COMPARTIDOS</h1>
+                <h2 class="text-page-1-h2">Todo lo que necesitan para volver al cole con ilusión</h2>
             </div>
             <div class="arow-page-1">
-                <img src="images/icon-scroll-down.svg" alt="scroll down arrow icon" id="page-3">
+                <a href="#page-3"><img src="images/icon-scroll-down.svg" alt="scroll down arrow icon"></a>
             </div>
             </div>
         </section>
         
-        <section class="page-2">
-            <h3>HISTORIAS, MODA Y ROPA DEPORTIVA</h3>
-            <h2>TU TIENDA DE DEPORTE</h2>
+        <section id="page-2" class="page-2">
+            <h3 class="page-2-h3">HISTORIAS, MODA Y ROPA DEPORTIVA</h3>
+            <h2 class="page-2-h2">TU TIENDA DE DEPORTE</h2>
             <p class="page-2-p">El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece las últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
-            <button><p class="btn">Comprar</p></button>
-            <!--texto + botón
-            no especifica nada más
-            -->
+            <button class="btn"><p class="btn-text">Comprar</p></button>
         </section>
         
-        <section class="page-3">
+        <section id="page-3" class="page-3"> <!--enlazar con arow-page-1-->
             <!--
             GRID!!!
             pensar en todo tipo de pantallas
             -->
-            <div>
-                ¡Prepáralos con tus marcas favoritas!
-            VUELTA AL COLE
+            <div class="page-3-text">
+                <p class="page-3-p">¡Prepáralos con tus marcas favoritas!</p>
+                <h1 class="page-3-h1">VUELTA AL COLE</h1>
             </div>
-            <div>
-            Mochilas escolares
-            Estuches
-            Bolsas de deporte
+            <div class="page-3-products">
+                <div class="product">
+                    <img src="images/image01.webp"alt="niña con mochila en el hombro derecho">
+                    <p class="product-name">Mochilas escolares</p>
+                </div>
+                <div class="product">
+                    <img src="images/image03.webp"alt="niño jugando con rotuladores y un estuche">
+                    <p class="product-name">Estuches</p>
+                </div>
+                <div class="product">
+                    <img src="images/image02.webp"alt="niña con mochila en el hombro izquierdo">
+                    <p class="product-name">Bolsas de deporte</p>
+                </div>
             </div>
-            <buton>Empezar ahora</buton>
+            <button class="btn"><p class="btn-text">Empezar ahora</p></button>
             <div>arow</div>
         </section>
 
