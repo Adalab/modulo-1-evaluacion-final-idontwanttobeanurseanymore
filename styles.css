@@ -37,10 +37,6 @@ main{
     background-color: aquamarine;
     width: 100%;
 }
-/*
-div, section, footer, main {
-  border: 1px solid red;
-}*/
 header{
     padding:0;
     margin: 0;
@@ -92,9 +88,8 @@ header{
     font-size: 3dvh;
     font-weight: 300;
 }
-.arow-page-1{
+.arrow{
     background-color: white;
-    padding:3dvh;
     margin: 0;
     width: 7dvh;
     height: 7dvh;
@@ -103,8 +98,7 @@ header{
     align-items: center;
     justify-content: center;
 }
-.arrow-page-1 img{
-    width: 100%;
+.arrow img{
     margin:0;
     padding:0;
     /*COLOR VERDE????*/
@@ -193,6 +187,9 @@ PAGE-3
     color: white;
     margin-top: 2dvh;
 }
+.page-3 .arrow img{
+    margin-top: 1dvh
+}
 
 
 
@@ -234,6 +231,6 @@ PAGE-3
 
 /*
 DUDAS:
-- Primera flecha como cambio el color????
+- Flechas: como cambio el color????
 - Botones crecen con el tamaño, pero con rem quedan raros :(
 */
