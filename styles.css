@@ -145,8 +145,41 @@ button{
     font-size: 3dvh;
     border-radius: 4.5dvh;
     width: 60%;
+    /*tamaño botón: 
+    164.824x23.187
+    tamaño contenedor: 327x244pixeles
+    */
 }
 .btn{
     margin-bottom: 0;
     font-weight: 500;
 }
+
+/* MEDIA QUERIES*/
+   /* TABLET */
+@media (min-width: 768px) {
+    .page-2{
+        padding: 7dvh
+    }
+    .page-2-p{
+        margin-bottom: 4dvh;
+    }
+    button{
+        width: 40%;
+    }
+}
+
+
+/* 💻 DESKTOP */
+@media (min-width: 1024px) {
+     .page-2{
+        padding: 7dvh
+    }
+    .page-2-p{
+        margin-bottom: 4dvh;
+    }
+    button{
+        width: 25%;
+    }
+}
+    
