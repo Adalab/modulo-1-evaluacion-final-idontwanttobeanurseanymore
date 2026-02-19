@@ -110,40 +110,43 @@ header{
 }
 
 /*
-.page-1{
-    width:100%;
-   margin-top:100px;
-}
-
-.main-page-1{
-    margin-top: 100px;
+    PAGE-2
+    */
+.page-2{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items:flex-end;
-    justify-content: space-between;
-}
-
-.page-1{
-    background-image: url("./images/hero-cover.webp");
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-between;
-}
-.menu{
-    position:fixed;
-    top:0;
-    left: 0;
-    background-color: green;
-    padding: 5px;
-    margin:1rem;
-    width:100%;
-}
-.menu img{
+    justify-content: center;
     padding: 1rem;
+    font-size: 3dvh;
+    background-color: white;
 }
-    */
-/*.main-page-1{
-    display:flex;
+.page-2 h3{
+    font-size: 2.5dvh;
+    font-weight: 400;
+    color: var(--verde);
+    margin: 1dvh 0;
 }
-    */
+.page-2 h2{
+    font-size: 4dvh;
+    font-weight: 600;
+    margin: 1dvh 0;
+}
+.page-2-p{
+    margin-bottom: 7dvh;
+}
+button{
+    color: var(--verde);
+    background-color: white;
+    border-style: solid;
+    border-color: var(--verde);
+    padding: 2dvh;
+    border-width: 3px;
+    font-size: 3dvh;
+    border-radius: 4.5dvh;
+    width: 60%;
+}
+.btn{
+    margin-bottom: 0;
+    font-weight: 500;
+}
