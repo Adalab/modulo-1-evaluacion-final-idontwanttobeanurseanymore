@@ -95,7 +95,7 @@ header{
     margin:0;
     padding:0;
     filter: invert(37%) sepia(75%) saturate(500%) hue-rotate(80deg);
-    /*COLOR VERDE????*/
+    /*Este verde no es*/
 }
 
 /*
@@ -141,6 +141,10 @@ PAGE-2
     font-size: 2rem;
     font-weight: 500;
 }
+.btn a{
+    text-decoration: none;
+    color: var(--verde);
+}
 
 /*
 PAGE-3
@@ -181,6 +185,9 @@ PAGE-3
     background-color: var(--verde);
     color: white;
     margin-top: 2dvh;
+}
+.page-3 .btn a{
+    color: white;
 }
 .page-3 .arrow img{
     margin-top: 1dvh
@@ -231,6 +238,10 @@ footer a{
         justify-content: space-evenly;
         padding: 4dvh;
     }
+     .page-3-products{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3dvh;
+    }
     .footer-logos{
        order:1;
     }
@@ -252,10 +263,7 @@ footer a{
     .btn{
         width: 25%;
     }
-    .page-3-products{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2dvh;
-    }
+   
 }
     
 /*PSEUDO-SELECTORS*/
@@ -263,6 +271,10 @@ footer a{
 .copyright::before {
   content: "\00A9"; /* Símbolo de copyright */
   margin-right: 1dvh;
+}
+.btn:hover{
+    background-color: var(--verde);
+    color: white;
 }
 .arrow:hover{
     background-color: var(--verde);
@@ -272,6 +284,9 @@ footer a{
 }
 
 /*
-DUDAS:
-- flecha footer en medio de los dos colores???
+Pendientes:
+- starter kit
+- flecha footer en medio de los dos colores
+- flechas de color verde y blanco en :hover
+- animaciones
 */
