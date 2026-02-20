@@ -3,7 +3,7 @@ si uso SK:
 carpeta scss dentro de src -> aquí está el main.scss y la carpeta de partials
 en main ponemos los enlaces a los partials
 Partials que me interesan:
-- reset inicial
+- reset inicial  _reset.scss
 - colores (variables)
 - @media queries
 
@@ -14,13 +14,10 @@ después añado mis estilos en el main
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*
-    _reset.scss
-    */
 }
 :root{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     --verde:#6C933E ;
     --verde-claro:#D9E4CC;
     --gris: #636363;
@@ -28,14 +25,11 @@ después añado mis estilos en el main
 }
 body{
     margin: 0;
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Slab', serif;
 }
 main{
-    background-color: aquamarine;
     width: 100%;
 }
 header{
@@ -43,22 +37,21 @@ header{
     margin: 0;
     width: 7dvh;
     position: fixed;
+    top:0;
+    left:0;
 }
-
 .header img{
     width:100%;
     padding: 2dvh;
     margin:0;
     background-color: var(--verde);
 }
-
 .page-1{
     background-image: url("./images/hero-cover.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 90% center;
     height: 100dvh;
-
 }
 .main-page-1{
     display: flex;
@@ -78,15 +71,14 @@ header{
     font-size: 3dvh;
     gap: 1.2rem;
     width: 80%;
-    height: 80dvh;
-    
+    height: 80dvh; 
 }
 .text-page-1-h1{
-    font-size: 6dvh;
+    font-size: 3rem;
     font-weight: 600;
 }
 .text-page-1-h2{
-    font-size: 3dvh;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 .arrow{
@@ -102,6 +94,7 @@ header{
 .arrow img{
     margin:0;
     padding:0;
+    filter: invert(37%) sepia(75%) saturate(500%) hue-rotate(80deg);
     /*COLOR VERDE????*/
 }
 
@@ -114,17 +107,17 @@ PAGE-2
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    font-size: 3dvh;
+    font-size: 1.5rem;
     background-color: white;
 }
 .page-2-h3{
-    font-size: 2.5dvh;
+    font-size: 1.25rem;
     font-weight: 400;
     color: var(--verde);
     margin: 1dvh 0;
 }
 .page-2-h2{
-    font-size: 4dvh;
+    font-size: 2rem;
     font-weight: 600;
     margin: 1dvh 0;
 }
@@ -138,13 +131,14 @@ PAGE-2
     border-color: var(--verde);
     padding: 2dvh;
     border-width: 3px;
-    font-size: 3dvh;
+    font-size: 1.5rem;
     border-radius: 4.5dvh;
     width: 60%;
+    max-width:280px;
 }
 .btn-text{
     margin-bottom: 0;
-    font-size: 4dvh;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -162,14 +156,14 @@ PAGE-3
 }
 .page-3-p{
     color: var(--gris);
-    font-size: 2.2dvh;
+    font-size: 1rem;
     font-weight: 700;
 }
 .page-3-h1{
-    font-size: 4dvh;
+    font-size: 2rem;
     font-weight: 700;
 }
-.page-3 div{
+.page-3 > div{
     display:grid;
     place-items:center;
     text-align: center;
@@ -180,7 +174,7 @@ PAGE-3
     width:70%;
 }
 .product-name{
-    font-size: 3dvh;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .page-3 .btn{
@@ -210,18 +204,18 @@ footer div{
     text-decoration: none;
 }
 .footer-logos{
-    font-size: 2dvh;
+    font-size: 1rem;
     font-weight: 300;
 }
 footer a{
     color: white;
     text-decoration: none;
-    font-size: 3dvh;
+    font-size: 1.5rem;
     font-weight: 200;
 }
 
 /* MEDIA QUERIES*/
-   /* TABLET */
+
 @media (min-width: 768px) {
     .page-2{
         padding: 7dvh
@@ -233,18 +227,21 @@ footer a{
         width: 40%;
     }
     footer{
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: space-evenly;
         padding: 4dvh;
     }
-    .footer-logos .footer-socials{
-        flex-direction: row-reverse;
-        gap: 4dvh;
+    .footer-logos{
+       order:1;
+    }
+    .footer-products{
+        order:2;
+    }
+    .footer-socials{
+        order:3;
     }
 }
 
-
-/* 💻 DESKTOP */
 @media (min-width: 1024px) {
      .page-2{
         padding: 7dvh
@@ -252,7 +249,7 @@ footer a{
     .page-2-p{
         margin-bottom: 4dvh;
     }
-    btn{
+    .btn{
         width: 25%;
     }
     .page-3-products{
@@ -262,20 +259,19 @@ footer a{
 }
     
 /*PSEUDO-SELECTORS*/
+
 .copyright::before {
   content: "\00A9"; /* Símbolo de copyright */
   margin-right: 1dvh;
 }
-/*
-.btn:hover{
-
+.arrow:hover{
+    background-color: var(--verde);
 }
-*/
-
+.arrow:hover img {
+  filter: invert(100%); /*debería ser blanco, pero se ve azul*/
+}
 
 /*
 DUDAS:
-- Flechas: como cambio el color????
-- Botones crecen con el tamaño, pero con rem quedan raros :(
-- footer: como le doy la vuelta a solo 1 div???
+- flecha footer en medio de los dos colores???
 */
