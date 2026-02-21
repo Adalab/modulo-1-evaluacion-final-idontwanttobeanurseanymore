@@ -303,6 +303,15 @@ footer a{
     background-color: var(--verde);
     color: white;
 }
+.page-3 .btn:hover{
+    background-color: white;
+}
+.btn a:hover{
+    color: white;
+}
+.page-3 .btn a:hover{
+    color: var(--verde);
+}
 .arrow:hover{
     background-color: var(--verde);
 }
