@@ -86,8 +86,8 @@ header{
 .arrow{
     background-color: white;
     margin: 0;
-    width: 7dvh;
-    height: 7dvh;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -96,8 +96,7 @@ header{
 .arrow img{
     margin:0;
     padding:0;
-    filter: invert(37%) sepia(75%) saturate(500%) hue-rotate(80deg);
-    /*Este verde no es*/
+    width:1.5rem;
 }
 
 /*
@@ -138,7 +137,7 @@ PAGE-2
     border-color: var(--verde);
     padding: 0.5rem;
     border-width: 3px;
-    border-radius: 4.5dvh;
+    border-radius: 3rem;
     width: 60%;
     max-width:280px;
 }
@@ -151,6 +150,7 @@ PAGE-2
 .btn a{
     text-decoration: none;
     color: var(--verde);
+    padding:1rem;
 }
 
 /*
@@ -195,10 +195,15 @@ PAGE-3
 .page-3 .btn{
     background-color: var(--verde);
     color: white;
-    margin-top: 2dvh;
+    margin-top: 1rem;
 }
 .page-3 .btn a{
     color: white;
+    padding:0;
+}
+.page-3 .btn-text{
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 .page-3 .arrow img{
     margin-top: 1dvh
@@ -244,7 +249,7 @@ footer a{
     .page-2.h2{
         font-size: 0.667rem;
     }
-    
+
     .page-2-p{
         margin-bottom: 3.5dvh;
         font-size: 0.8334rem;
@@ -260,7 +265,7 @@ footer a{
         font-size: 1.167rem;
     }
       .page-3 > div{
-        margin-top:2dvh;
+        margin-top:1rem;
     }
      .page-3-products{
         grid-template-columns: repeat(3, 1fr);
@@ -280,24 +285,67 @@ footer a{
     footer a{
         font-size: 0.667rem;
     }
-        .footer-logos{
+    .footer-logos{
         order:1;
         font-size: 0.583rem;
-        }
-        .footer-products{
+    }
+    .footer-products{
             order:2;
-        }
-        .footer-socials{
+    }
+    .footer-socials{
             order:3;
-        }
+    }
+}
+@media (min-width: 1024px) {
+    :root{
+        font-size: 28px;
+    }
+    .text-page-1-h1{
+        font-size: 3.75rem;
+    }
+    .page-2{
+        padding: 1rem 8rem;
+    }
+    .page-2.h2{
+        font-size: 0.75rem;
+    }
+    .page-2-p{
+        margin-bottom: 3dvh;
+        font-size: 0.875rem;
+    }
+    .btn{
+        font-size: 0.875rem;
+        margin-bottom:1rem;
+    }
+    .page-3-p1{
+        font-size: 0.5834rem;
+    }
+    .page-3-p2{
+        font-size: 1.25rem;
+    }
+    .page-3 > div{
+        margin-top:1.5rem;
+    }
+     .page-3-products{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7rem;
+    }
+    .product-name{
+        font-size: 0.8334rem;
+    }
+    .page-3 .btn{
+        margin: 1.5rem;
+    }
+     .page-3 .btn a{
+        padding:0.1rem
+    }
 }
 
-    */
 /*PSEUDO-SELECTORS*/
 
 .copyright::before {
   content: "\00A9"; /* Símbolo de copyright */
-  margin-right: 1dvh;
+  margin-right: 0.2rem;
 }
 .btn:hover{
     background-color: var(--verde);
@@ -313,11 +361,9 @@ footer a{
     color: var(--verde);
 }
 .arrow:hover{
-    background-color: var(--verde);
+    background-color: var(--gris-oscuro);
 }
-.arrow:hover img {
-  filter: invert(100%); /*debería ser blanco, pero se ve azul*/
-}
+
 
 /*
 Pendientes:
