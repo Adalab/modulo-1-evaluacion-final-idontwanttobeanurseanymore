@@ -282,6 +282,7 @@ footer a{
     }
         .footer-logos{
         order:1;
+        font-size: 0.583rem;
         }
         .footer-products{
             order:2;
