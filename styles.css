@@ -20,7 +20,7 @@ después añado mis estilos en el main
     font-size: 16px;
     --verde:#6C933E ;
     --verde-claro:#D9E4CC;
-    --gris: #636363;
+    --gris: #626262;
     --gris-oscuro: #4A4A4A;
 }
 body{
@@ -35,7 +35,8 @@ main{
 header{
     padding:0;
     margin: 0;
-    width: 7dvh;
+    width: 40px;
+    height: 40px;
     position: fixed;
     top:0;
     left:0;
@@ -68,18 +69,19 @@ header{
     color: white;
     text-align: center;
     justify-content: flex-end;
-    font-size: 3dvh;
+    font-size: 1.875rem;
     gap: 1.2rem;
     width: 80%;
     height: 80dvh; 
 }
 .text-page-1-h1{
-    font-size: 3rem;
-    font-weight: 600;
+    font-family: "Roboto slab", serif;
+    font-weight: 700;
 }
 .text-page-1-h2{
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
 }
 .arrow{
     background-color: white;
@@ -106,39 +108,44 @@ PAGE-2
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 1.5rem;
     background-color: white;
 }
-.page-2-h3{
-    font-size: 1.25rem;
+.page-2-h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
     font-weight: 400;
     color: var(--verde);
     margin: 1dvh 0;
 }
-.page-2-h2{
-    font-size: 2rem;
-    font-weight: 600;
+.page-2-h3{
+    font-family: "Roboto slab", serif;
+    font-size: 1.375rem;
+    font-weight: 700;
     margin: 1dvh 0;
 }
 .page-2-p{
-    margin-bottom: 7dvh;
+    font-family: "Roboto", sans-serif;
+    color: var(--gris);
+    margin-bottom: 4dvh;
+    font-size: 1.125rem;
+    font-weight: 400;
 }
 .btn{
     color: var(--verde);
     background-color: white;
     border-style: solid;
     border-color: var(--verde);
-    padding: 2dvh;
+    padding: 0.5rem;
     border-width: 3px;
-    font-size: 1.5rem;
     border-radius: 4.5dvh;
     width: 60%;
     max-width:280px;
 }
 .btn-text{
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 .btn a{
@@ -158,27 +165,31 @@ PAGE-3
 .page-3-text{
     width: 70%;
 }
-.page-3-p{
+.page-3-p1{
+    font-family: "Roboto", sans-serif;
     color: var(--gris);
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 700;
+    font-weight: bold;
 }
-.page-3-h1{
-    font-size: 2rem;
+.page-3-p2{
+    font-family: "Roboto slab", serif;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 .page-3 > div{
     display:grid;
     place-items:center;
     text-align: center;
-    margin-top: 4dvh;
+    margin-top: 2.5dvh;
 }
 .product img{
     border-radius: 50%;
     width:70%;
 }
 .product-name{
-    font-size: 1.5rem;
+    font-family: "Roboto slab", serif;
+    font-size: 0.875rem;
     font-weight: 700;
 }
 .page-3 .btn{
@@ -199,7 +210,7 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding: 2dvh;
+    padding: 1.5dvh;
 }
 footer div{
     display: flex;
@@ -217,55 +228,70 @@ footer div{
 footer a{
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* MEDIA QUERIES*/
 
 @media (min-width: 768px) {
-    .page-2{
-        padding: 7dvh
+    :root{
+        font-size: 24px;
     }
+    .text-page-1-h1{
+        font-size: 3.125rem;
+    }
+    .page-2.h2{
+        font-size: 0.667rem;
+    }
+    
     .page-2-p{
-        margin-bottom: 4dvh;
+        margin-bottom: 3.5dvh;
+        font-size: 0.8334rem;
     }
     .btn{
-        width: 40%;
+        font-size: 0.8334rem;
+        margin-bottom:1rem;
+    }
+    .page-3-p1{
+        font-size: 0.5rem;
+    }
+    .page-3-p2{
+        font-size: 1.167rem;
+    }
+      .page-3 > div{
+        margin-top:2dvh;
+    }
+     .page-3-products{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .product-name{
+        font-size: 0.75rem;
     }
     footer{
         flex-direction: row;
         justify-content: space-evenly;
-        padding: 4dvh;
+        align-items: flex-start;
     }
-     .page-3-products{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3dvh;
+    footer div{
+        align-items: flex-start;
     }
-    .footer-logos{
-       order:1;
+    footer a{
+        font-size: 0.667rem;
     }
-    .footer-products{
-        order:2;
-    }
-    .footer-socials{
-        order:3;
-    }
+        .footer-logos{
+        order:1;
+        }
+        .footer-products{
+            order:2;
+        }
+        .footer-socials{
+            order:3;
+        }
 }
 
-@media (min-width: 1024px) {
-     .page-2{
-        padding: 7dvh
-    }
-    .page-2-p{
-        margin-bottom: 4dvh;
-    }
-    .btn{
-        width: 25%;
-    }
-   
-}
-    
+    */
 /*PSEUDO-SELECTORS*/
 
 .copyright::before {
