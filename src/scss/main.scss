@@ -1,5 +1,13 @@
-* {
-  margin: 0;
-}
 
-/* Aquí van tus estilos */
+@use "./core/reset";
+@use "./core/variables";
+@use "./core/body";
+@use "./core/media";
+@use "./core/pseudo_selectors";
+
+@use "./layout/header";
+@use "./layout/footer";
+
+@use "./components/page-1";
+@use "./components/page-2";
+@use "./components/page-3";

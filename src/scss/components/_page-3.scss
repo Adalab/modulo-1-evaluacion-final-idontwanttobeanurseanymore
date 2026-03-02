@@ -1,0 +1,53 @@
+
+.page-3{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: var(--light-green);
+}
+.page-3-text{
+    width: 70%;
+}
+.page-3-p1{
+    font-family: "Roboto", sans-serif;
+    color: var(--grey);
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-weight: bold;
+}
+.page-3-p2{
+    font-family: "Roboto slab", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.page-3 > div{
+    display:grid;
+    place-items:center;
+    text-align: center;
+    margin-top: 2.5dvh;
+}
+.product img{
+    border-radius: 50%;
+    width:70%;
+}
+.product-name{
+    font-family: "Roboto slab", serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.page-3 .btn{
+    background-color: var(--green);
+    color: white;
+    margin-top: 1rem;
+}
+.page-3 .btn a{
+    color: white;
+    padding:0;
+}
+.page-3 .btn-text{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.page-3 .arrow img{
+    margin-top: 1dvh
+}
