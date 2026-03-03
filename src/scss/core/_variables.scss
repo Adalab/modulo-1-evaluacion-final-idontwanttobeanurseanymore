@@ -1,9 +1,11 @@
+:root{
 // fonts
-$font-main: 'Roboto', sans-serif;
-$font-text: 'Roboto slab', sans-serif;
+--font-main: 'Roboto', sans-serif;
+--font-text: 'Roboto Slab', sans-serif;
 
 // colors
-$green: #6C933E;
-$light-green: #D9E4CC;
-$grey: #626262;
-$dark-grey: #4A4A4A;
+--green: #6C933E;
+--light-green: #D9E4CC;
+--grey: #626262;
+--dark-grey: #4A4A4A;
+}

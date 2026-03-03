@@ -9,14 +9,13 @@
     width: 70%;
 }
 .page-3-p1{
-    font-family: "Roboto", sans-serif;
     color: var(--grey);
     font-size: 0.75rem;
     font-weight: 700;
     font-weight: bold;
 }
 .page-3-p2{
-    font-family: "Roboto slab", serif;
+    font-family: var(--font-text);
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -31,7 +30,7 @@
     width:70%;
 }
 .product-name{
-    font-family: "Roboto slab", serif;
+    font-family: var(--font-text);
     font-size: 0.875rem;
     font-weight: 700;
 }

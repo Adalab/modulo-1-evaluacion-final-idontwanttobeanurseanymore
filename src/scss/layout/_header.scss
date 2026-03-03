@@ -6,10 +6,11 @@
   position: fixed;
   top:0;
   left:0;
-  &__img{
+}
+
+  header img{
     width:100%;
-    padding: 2dvh;
+    padding: 0.7rem;
     margin:0;
     background-color: var(--green);
   }
-}
